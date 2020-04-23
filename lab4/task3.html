@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        var x = prompt("Введите первое число: ", "")
+        while (isNaN(x)) {
+            x = prompt("Введите корректное число: ", "")
+        }
+        var y = prompt("Введите второе число: ", "")
+        while (isNaN(y)) {
+            y = prompt("Введите корректное число: ", "")
+        }
+        var sign = prompt("Введите знак операции(+, -, *, /): ", "")
+        while (!sign.includes('+') && !sign.includes('-') && !sign.includes('*') && !sign.includes('/')) {
+            alert("Ты чо ввёл(а)?")
+            sign = prompt("Введите знак операции: ", "")
+        }
+        switch (sign) {
+            case '+':
+                result = parseFloat(x, 10) + parseFloat(y, 10)
+                break
+            case '-': 
+                result = parseFloat(x, 10) - parseFloat(y, 10)
+                break
+            case '*': 
+                result = parseFloat(x, 10) * parseFloat(y, 10)
+                break
+            case '/':
+                if (parseFloat(y, 10) === 0)
+                    result = "Деление на ноль!"
+                else 
+                    result = parseFloat(x, 10) / parseFloat(y, 10)
+                break
+            default:
+                break
+        }
+        alert("Результат: " + result)
+    </script>
+</body>
+
+</html>

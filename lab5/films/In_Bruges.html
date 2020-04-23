@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="menu.css">
+    <title>Залечь на дно в Брюгге</title>
+    <script src="./scripts.js"></script>
+</head>
+
+<body style="background-image: url(res/In_Bruges_background.jpg);">
+    <nav class="menu">
+        <h2>Меню фильмов</h2>
+        <ul>
+            <li><a href="Fargo.html">Фарго</a></li>
+            <li><a href="In_Bruges.html">Залечь на дно в Брюгге</a></li>
+            <li><a href="Dead_Poets_Society.html">Общество мёртвых поэтов</a></li>
+            <li><a href="Phone_Booth.html">Телефонная будка</a></li>
+        </ul>
+    </nav>
+
+    <div class="div_horizontal">
+        <div class="pic">
+            <img src="res/In_Bruges_poster.jpg" alt="Iron man" class="image">
+        </div>
+
+        <div>
+            <div class="description">
+                <p>После того, как наемные убийцы Рэй и Кен запороли в Лондоне важное задание, их злобный шеф
+                    Гарри приказывает им отправиться в Брюгге и не высовываться. Оказавшись в старинном
+                    бельгийском городке, Рэй от нечего делать флиртует с местной красоткой, пока Кен наслаждается
+                    жизнью и неожиданным отпуском. Кажется, ничто не предвещает беду в спокойном городе…
+                </p>
+            </div>
+
+            <br/>
+
+            <table border="0">
+                <tr>
+                    <td><b>Дата выхода:</b></td>
+                    <td>
+                        <p>17 января 2008г.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Жанр:</b></td>
+                    <td>
+                        <p>	Комедия, криминал, триллер, драма</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Режиссёр:</b></td>
+                    <td>
+                        <p>Мартин МакДона</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Продюсеры:</b></td>
+                    <td>
+                        <p>Джефф Абберли, Джулия Блэкман, Грэм Бродбент</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="rating_title">
+                            <b>Рейтинг фильма</b>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            <div class="div1">
+                                <span class="rating_ball2">7.749</span>
+                                <span class="ratingCount">143&nbsp;295</span>
+                            </div>
+                            <div style="color:#999;font:100 11px tahoma, verdana">IMDb: 7.90 (375 441)</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+   
+
+    <h2>Актёры</h2>
+
+    <div class="container">
+        <div class="pic">
+            <img src="res/2_1.jpg" alt="Iron man" class="image">
+            <p>Колин Фаррелл</p>
+        </div>
+        <div class="pic">
+            <img src="res/2_2.jpg" alt="Iron man" class="image">
+            <p>Брендан Глисон</p>
+        </div>
+        <div class="pic">
+            <img src="res/2_3.jpg" alt="Iron man" class="image">
+            <p>Рэйф Файнс</p>
+        </div>
+    </div>
+
+    <div class = "block2">
+        <div class = "trailer">
+            <h2>Трейлер</h2>
+
+            <div style="width: 720px; margin: 0 auto;">
+                <iframe src="https://www.youtube.com/embed/ShqrRRjzt7k" width="720" height="480" align="left">
+                </iframe>
+            </div>
+        </div>
+        <div class = "reviews">
+            <h2>Отзывы о фильме</h2>
+            <div class = "comments" id="cms">
+                <div>
+                    <b>NastasiaCh</b>
+                    <p>Фильм стоит смотреть, понимая, что это не очередной проходной триллер,
+                        если так думать, просмотр будет скучным. Он интересен своей необычностью и глубиной.</p>
+                </div>
+                <div>
+                    <b>Шуршунчик</b>
+                    <p>Необычный,но в тоже время завараживающий фильм.
+                        И если в начеле я ловил себя, что как-то скучно, то потом не мог оторваться.=))</p>
+                </div>
+            </div>
+
+            <form name="new_review" action="#" method="get">
+                <div>
+                    <label class="block3" for="your_Name">Имя</label>
+                    <input class="block4" type="text" name="urN" id="your_Name">
+                </div>
+                <div>
+                    <label class="block3" for="ur_Review">Отзыв</label>
+                    <textarea class="block4" name="review_text" id="ur_Review" cols="98" rows="30"></textarea>
+                </div>
+                <div class="block4">
+                    <input type="button" value="Опубликовать" onclick="publishReview()">
+                </div>
+            </form>
+        </div>
+    </div>   
+</body>
+
+</html>

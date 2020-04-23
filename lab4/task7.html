@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <script>
+            var arr = ["test", 2, 1.5, false];
+
+            function find(arr, value) {
+                return arr.includes(value) ? arr.indexOf(value) : -1;
+            }
+
+            document.writeln(find(arr, "test") + "<br>");
+            document.writeln(find(arr, 2) + "<br>");
+            document.writeln(find(arr, 1.5) + "<br>");
+
+            document.writeln(find(arr, true) + "<br>");
+            document.writeln(find(arr, "1.5") + "<br>");
+        </script>  
+    </body>
+    
+</html>

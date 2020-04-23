@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        input[type="checkbox"] {
+            box-shadow: 2px 2px 2px 2px rgb(148, 24, 24);
+        } 
+        input[type="checkbox"]:checked {
+            box-shadow: 2px 2px 2px 2px rgb(8, 173, 185);
+        }
+        .cb {
+            background-color: rgba(187, 213, 216, 0.37);
+            width: 50px;
+            border-radius: 8px;
+        }
+        [id |= "message"] {
+            background-color: rgb(245, 150, 213);
+            width: 150px;
+            border-radius: 7px;
+        }
+        [id ^= "message-"] {
+            background-color: rgb(245, 150, 213);
+            border: 4px solid rgb(174, 126, 236);
+            margin: 4px;
+        }
+        [href $= "zip"]:hover {
+            color: rgb(231, 66, 162);
+        }
+        [data-action] {
+            color: rgb(17, 0, 255);
+        }
+        [data-action ~= "delete"] {
+            color: rgb(255, 255, 255);
+        }
+        [id ^= "message-"]:nth-child(2n) {
+            border-style:groove;
+            border-width: 8px;
+        }
+        h3 ~ a {
+            font-style: italic;
+        }
+        [id = "messages"] a:hover:last-child {
+            color: rgb(142, 242, 255);
+        }
+    </style>
+</head>
+
+<body>
+<div>
+<input type="checkbox" box-shadow>cat</input>
+<input type="checkbox" checked>dog</input>
+</div>
+<br>
+<div class="cb">
+    <input type="checkbox"> cat</input>
+</div>
+<br>
+<div class="cb">
+    <input type="checkbox" checked>dog</input>
+</div>  
+<input type="text" id="message">
+
+<h3 id="widget-title">Сообщения:</h3>
+<ul id="messages">
+    <li id="message-1">Сообщение 1</li>
+    <li id="message-2">Сообщение 2</li>
+    <li id="message-3" data-action="delete">Сообщение 3</li>
+    <li id="message-4" data-action="edit do-not-delete">Сообщение 4</li>
+    <li id="message-5" data-action="edit delete">Сообщение 5</li>
+    <li><a href="#">...</a></li>
+</ul>
+
+<a href="http://site.com/list.zip">Ссылка на архив</a>
+<a href="http://site.com/list.pdf">...и на PDF</a>
+</body>
+
+</html>

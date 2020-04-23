@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="menu.css">
+        <script src="./scripts.js"></script>
+    </head>
+
+    <body>
+        <form name="new_product" action="#" method="get">
+            <p><b>Наименование продукта:</b>
+            <input type="text" size = 40 name="name"></p>
+            <p><b>Цена продукта:</b>
+            <input type="text" size = 40 name="cost"></p>
+            <input type="button" value="Добавить" onclick="add_product()">
+            <input type="button" value="Общая сумма" onclick="show_sum()">
+            <input type="text" id="sum_cost" readonly>
+        </form>
+
+        <ul id="products" name = "123asd">
+            <!-- Empty -->
+        </ul>
+    </body>
+</html>

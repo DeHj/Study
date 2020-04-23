@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <script>
+            var arr = [1, 2, 3, 4, 5, 6, 7];
+
+            function filter(arr, func) {
+                return arr.filter(func);
+            };
+
+            function inBetween(l, r) {
+                return a => a >= l && a <= r ? true : false;
+            };
+            function inArray(arr) {
+                return a => arr.includes(a) ? true : false;
+            }
+            function odd() {
+                return a => a % 2 == 1 ? true : false;
+            }
+
+            document.writeln(filter(arr, odd()) + "<br>");
+            document.writeln(filter(arr, inBetween(3, 6)) + "<br>");
+            document.writeln(filter(arr, inArray([1, 2, 10, 3, 7])) + "<br>");
+        </script>  
+    </body>
+    
+</html>

@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./menu.css">
+    </head>
+
+    <body>
+        <div class="calculator">
+
+            <input class="out" id="outputfield" type="text" value="0" readonly>
+
+            <table>
+                <tr>
+                    <!-- <td colspan="5"><input class="out" id="outputfield" type="text" value="0" readonly></td>
+                    <input class="out" id="outputfield" type="text" value="10cc" size = 5 readonly></td> -->
+                </tr>
+                <tr>
+                    <td><input type="button" value="C" onclick="reset()"></td>
+                    <td><input type="button" value="&larr;" onclick="erase_last()"></td>
+                    <td><input type="button" value="(" onclick="add_value('(')"></td>
+                    <td><input type="button" value=")" onclick="add_value(')')"></td>
+                    <!-- <td><input type="button" value="" onclick="add_value('')"></td> -->
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="add_value(7)"></td>
+                    <td><input type="button" value="8" onclick="add_value(8)"></td>
+                    <td><input type="button" value="9" onclick="add_value(9)"></td>
+                    <td><input type="button" value="-" onclick="add_value('-')"></td>
+                    <td><input type="button" value="2cc" onclick="to_bin()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="add_value(4)"></td>
+                    <td><input type="button" value="5" onclick="add_value(5)"></td>
+                    <td><input type="button" value="6" onclick="add_value(6)"></td>
+                    <td><input type="button" value="+" onclick="add_value('+')"></td>
+                    <td><input type="button" value="10cc" onclick="to_dec()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="add_value(1)"></td>
+                    <td><input type="button" value="2" onclick="add_value(2)"></td>
+                    <td><input type="button" value="3" onclick="add_value(3)"></td>
+                    <td><input type="button" value="*" onclick="add_value('*')"></td>
+                    <td><input type="button" value="!" onclick="add_value('!')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="add_value(0)"></td>
+                    <td><input type="button" value="." onclick="add_value('.')"></td>
+                    <td><input type="button" value="=" onclick="calculate()"></td>
+                    <td><input type="button" value="/" onclick="add_value('/')"></td>
+                    <!-- <td><input type="button" value="10cc" onclick="toDec()"></td> -->
+                </tr>
+            </table>
+
+            <script src="./scripts.js"></script>
+        </div>
+    </body>
+
+</html>

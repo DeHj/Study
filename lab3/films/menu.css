@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    font-family: monospace;
+    color: #000000;
+    padding-left: 2em;
+    margin-top: 2em;
+}
+
+h3 {
+    font-family: monospace;
+    color: #ffffff;
+    padding-left: 2em;
+    margin-top: 2em;
+}
+
+p {
+    color: #000000;
+    max-width: 45em;
+}
+
+p2 {
+    color: #ffffff;
+    max-width: 45em;
+}
+
+b {
+    color: rgb(255, 196, 0);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.menu ul {
+    margin-top: 25px;
+    height: 50px;
+    background: rgb(71, 71, 71);
+    padding-left: 0;
+
+    justify-content: flex-end;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    padding: 0px 15px;
+    font-family: arial;
+    line-height: 50px;
+    /*ровняем меню по вертикали*/
+    display: block;
+}
+
+.menu a:hover {
+    color: rgb(190, 0, 0);
+}
+
+.menu li {
+    float: left;
+    margin-right: 2em;
+}
+
+.container {
+    display: flex;
+
+    margin: 0;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.div_horizontal {
+    display: grid;
+    margin: 40px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.pic {
+    display: flex;
+    max-width: 100%;
+    margin-right: 3em;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+}
+
+.comments {
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    background-color: rgb(10, 129, 138);
+}
+
+.text {
+    margin-left: 0;
+    margin-top: 2em;
+    background-size: cover;
+    max-width: 45em;
+}
+
+.block2 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1   fr 1fr;
+}
+
+.trailer {
+    grid-column-start: 2;
+}
+
+.reviews {
+    grid-column-start: 2;
+}
+
+table {
+    margin-left:0px;
+}
+
+.rating_title {
+    margin-top: 2em;
+}
+
+.div1 {
+    border-bottom: 2px solid rgb(255, 0, 0);
+    max-height: 80%;
+    max-width: 82%;
+}
+
+.rating {
+    outline: 0;
+    width: 170px;
+    font-family: tahoma;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    margin-top: 1.2em;
+}
+
+.rating_ball {
+    font-size: 2em;
+    font-family: tahoma;
+    font-weight: normal !important;
+    font-size: 32px;
+    color: #000000 !important;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.rating_ball2 {
+    font-size: 2em;
+    font-family: tahoma;
+    font-weight: normal !important;
+    font-size: 32px;
+    color: #ffffff !important;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.ratingCount {
+    font-family: tahoma;
+    font-weight: normal !important;
+    color: #ffffff !important;
+    outline: 0;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    width: 240px;
+    height: 320px;
+}
